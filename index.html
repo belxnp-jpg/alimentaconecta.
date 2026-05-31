@@ -1,10 +1,218 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Mi página</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AlimentaConecta</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    color:#333;
+}
+
+header{
+    background:#2e7d32;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+nav{
+    background:#1b5e20;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+.hero{
+    padding:60px 20px;
+    text-align:center;
+    background:white;
+}
+
+.hero h2{
+    font-size:2.5rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.6;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#4caf50;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.section{
+    padding:50px 20px;
+    max-width:1100px;
+    margin:auto;
+}
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+
+.card{
+    background:white;
+    width:250px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card h3{
+    color:#2e7d32;
+    margin-bottom:10px;
+}
+
+.formulario{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+}
+
+input, textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    background:#2e7d32;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+</style>
 </head>
 <body>
-    <h1>Bienvenido a AlimentaConecta</h1>
-    <p>Conectamos alimentos con quienes los necesitan.</p>
+
+<header>
+    <h1>🍎 AlimentaConecta</h1>
+    <p>Conectando alimentos con quienes más los necesitan</p>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#como-funciona">Cómo Funciona</a>
+    <a href="#beneficios">Beneficios</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<section class="hero" id="inicio">
+    <h2>Reduciendo el desperdicio alimentario</h2>
+    <p>
+        AlimentaConecta une supermercados, agricultores, restaurantes y
+        organizaciones sociales para rescatar alimentos en buen estado y
+        entregarlos a familias que necesitan apoyo alimentario.
+    </p>
+    <a href="#contacto" class="btn">Quiero Participar</a>
+</section>
+
+<section class="section" id="como-funciona">
+    <h2>¿Cómo funciona?</h2>
+    <br>
+
+    <div class="cards">
+        <div class="card">
+            <h3>1. Donación</h3>
+            <p>Empresas y agricultores publican alimentos disponibles.</p>
+        </div>
+
+        <div class="card">
+            <h3>2. Verificación</h3>
+            <p>Se valida que los productos estén aptos para consumo.</p>
+        </div>
+
+        <div class="card">
+            <h3>3. Distribución</h3>
+            <p>Organizaciones coordinan la entrega a familias.</p>
+        </div>
+
+        <div class="card">
+            <h3>4. Seguimiento</h3>
+            <p>Se registra cada donación para garantizar transparencia.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="beneficios">
+    <h2>Beneficios</h2>
+    <br>
+
+    <div class="cards">
+        <div class="card">
+            <h3>🤝 Social</h3>
+            <p>Ayuda a familias vulnerables y fortalece la comunidad.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌱 Ambiental</h3>
+            <p>Reduce el desperdicio de alimentos y la contaminación.</p>
+        </div>
+
+        <div class="card">
+            <h3>💰 Económico</h3>
+            <p>Optimiza recursos y disminuye costos de eliminación.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="contacto">
+    <h2>Contáctanos</h2>
+    <br>
+
+    <div class="formulario">
+        <form>
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <textarea rows="5" placeholder="Escribe tu mensaje"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 AlimentaConecta - Lo que sobra puede alimentar una esperanza.</p>
+</footer>
+
 </body>
 </html>
